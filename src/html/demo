@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    .orange {
+color: orange;
+    }
+</style>
+
+    </head>
+<body>
+    <h1>
+        Det her er min hjemmeside
+    </h1>
+    <p id="demo"></p>
+<script>
+
+    document.getElementById("demo").innerHTML = "Hjemmeside";
+    document.getElementById("demo"). style.color="red";
+    const pa = document.createElement("p2");
+    pa.innerHTML = "Hej";
+    let headings = document.getElementsByTagName("h1");
+    console.log(headings);
+headings[0].className="orange";
+let paragraph = document.createElement("p");
+console.log(paragraph);
+//paragraph.innerText="Eksempel";
+paragraph.innerHTML="<strong>Eksempel</strong";
+let body = document.getElementsByTagName("body");
+body[0].appendChild(paragraph);
+console.log(paragraph.innerText);
+console.log(paragraph.innerHTML);
+
+headings[0].style.fontFamily = "Sans-serif";
+
+</script>
+
+
+
+
+</body>
+</html>
+
